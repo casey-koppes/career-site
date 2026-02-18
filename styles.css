@@ -211,7 +211,7 @@ ul {
 .hero-content {
     position: relative;
     max-width: 600px;
-    margin-left: 650px;
+    margin-left: 600px;
     margin-right: auto;
     text-align: center;
     z-index: 0;
@@ -431,7 +431,7 @@ ul {
 .project-card {
     background-color: transparent;
     perspective: 1000px;
-    height: 400px;
+    height: 450px;
     cursor: pointer;
 }
 
