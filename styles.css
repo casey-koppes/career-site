@@ -466,10 +466,12 @@ ul {
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .project-card-front .btn {
-    margin-bottom: 1rem;
+    margin-top: auto;
+    flex-shrink: 0;
 }
 
 .project-card-back {
@@ -650,6 +652,21 @@ button.click-to-flip {
     font-size: 1.125rem;
     color: var(--text-secondary);
     margin-bottom: 2rem;
+}
+
+.calendar-wrapper {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.calendar-wrapper iframe {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 700px;
 }
 
 /* ===========================
