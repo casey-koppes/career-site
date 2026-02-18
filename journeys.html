@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Journeys 2.0 - Real-time Event-Based Marketing Workflows">
+    <title>Journeys 2.0 | Casey Koppes</title>
+    <link rel="icon" type="image/jpeg" href="assets/headshot.jpg">
+    <link rel="apple-touch-icon" href="assets/headshot.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .project-hero {
+            padding: 8rem 0 4rem;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .project-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #ffffff;
+            z-index: 0;
+        }
+
+        .project-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 1rem;
+        }
+
+        .project-hero .project-subtitle {
+            font-size: 1.5rem;
+            color: #000000;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+        }
+
+        .project-content {
+            padding: 4rem 0;
+        }
+
+        .project-section {
+            margin-bottom: 3rem;
+        }
+
+        .project-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .project-section h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .project-section p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .project-section ul {
+            list-style: disc;
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-section li {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-image-large {
+            width: 100%;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 0.75rem;
+            margin: 2rem 0;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand"><a href="index.html" style="color: inherit;">Casey Koppes</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#schedule">Schedule</a></li>
+                <li><a href="index.html#resume" style="color: var(--primary-color);">Resume</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to Projects
+            </a>
+            <h1>Journeys 2.0</h1>
+            <p class="project-subtitle">Real-time, event-based marketing workflows that transform customer journeys</p>
+            <div class="project-tags">
+                <span class="skill-tag">Segment</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto;">
+
+                <div class="project-section">
+                    <h2>Overview</h2>
+                    <p>
+                        Journeys 2.0 represents a fundamental transformation in how businesses automate and personalize customer interactions. This platform allows users to build sophisticated, real-time, event-based marketing workflows that respond dynamically to customer behavior.
+                    </p>
+                    <p>
+                        The new architecture brings three core capabilities that redefine marketing automation: real-time orchestration for instant customer engagement, richer personalization through advanced data integration, and data warehouse composability for seamless enterprise data utilization.
+                    </p>
+                </div>
+
+                <div class="project-image-large" style="background-image: url('assets/journeys-large.jpg');"></div>
+
+                <div class="project-section">
+                    <h2>Key Features</h2>
+
+                    <h3>Real-Time Orchestration</h3>
+                    <p>
+                        Execute marketing workflows in milliseconds as customer events occur. The platform processes events in real-time, enabling immediate personalized responses across all customer touchpoints.
+                    </p>
+
+                    <h3>Advanced Personalization</h3>
+                    <p>
+                        Leverage comprehensive customer data to create highly personalized experiences. The system integrates behavioral data, demographic information, and real-time context to deliver relevant messaging.
+                    </p>
+
+                    <h3>Data Warehouse Composability</h3>
+                    <p>
+                        Connect directly to your data warehouse to unlock the full power of your enterprise data. Build workflows using any data available in your warehouse without complex ETL processes.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h2>Impact</h2>
+                    <ul>
+                        <li>Reduced time-to-market for new campaigns by 60% through intuitive workflow builder</li>
+                        <li>Increased customer engagement rates by 40% with real-time personalization</li>
+                        <li>Enabled seamless integration with existing data infrastructure for Fortune 500 companies</li>
+                        <li>Processed over 1 billion events per day with sub-second latency</li>
+                        <li>Supported multi-channel orchestration across email, SMS, push, and web</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>My Role</h2>
+                    <p>
+                        As Staff Product Manager, I led the product strategy and cross-functional execution of Journeys 2.0. Key responsibilities included:
+                    </p>
+                    <ul>
+                        <li>Defined product vision and roadmap aligned with market needs and company strategy</li>
+                        <li>Conducted extensive customer research to identify pain points in existing workflows</li>
+                        <li>Collaborated with engineering teams to architect scalable, real-time infrastructure</li>
+                        <li>Partnered with design to create intuitive workflow building experiences</li>
+                        <li>Led go-to-market strategy and customer adoption initiatives</li>
+                        <li>Established success metrics and analytics framework to measure product impact</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                    <a href="index.html#projects" class="btn btn-primary">View More Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Built by vibing with a friend named <img src="assets/claude-logo.png" alt="Claude" style="height: 1.2em; vertical-align: middle; margin-left: 0.25em;"></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

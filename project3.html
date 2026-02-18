@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project 3 - Product Portfolio">
+    <title>Project 3 | Casey Koppes</title>
+    <link rel="icon" type="image/jpeg" href="assets/headshot.jpg">
+    <link rel="apple-touch-icon" href="assets/headshot.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .project-hero {
+            padding: 8rem 0 4rem;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .project-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #ffffff;
+            z-index: 0;
+        }
+
+        .project-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 1rem;
+        }
+
+        .project-hero .project-subtitle {
+            font-size: 1.5rem;
+            color: #000000;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+        }
+
+        .project-content {
+            padding: 4rem 0;
+        }
+
+        .project-section {
+            margin-bottom: 3rem;
+        }
+
+        .project-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .project-section h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .project-section p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .project-section ul {
+            list-style: disc;
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-section li {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-image-large {
+            width: 100%;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 0.75rem;
+            margin: 2rem 0;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand"><a href="index.html" style="color: inherit;">Casey Koppes</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#schedule">Schedule</a></li>
+                <li><a href="index.html#resume" style="color: var(--primary-color);">Resume</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to Projects
+            </a>
+            <h1>Project Name 3</h1>
+            <p class="project-subtitle">Describe your third featured project</p>
+            <div class="project-tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">Docker</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto;">
+
+                <div class="project-section">
+                    <h2>Overview</h2>
+                    <p>
+                        Add your project description here. Describe what the project does, the problem it solves, and why it matters.
+                    </p>
+                </div>
+
+                <div class="project-image-large" style="background-image: url('assets/project3.jpg');"></div>
+
+                <div class="project-section">
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li>Feature 1 description</li>
+                        <li>Feature 2 description</li>
+                        <li>Feature 3 description</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>Impact</h2>
+                    <ul>
+                        <li>Impact metric 1</li>
+                        <li>Impact metric 2</li>
+                        <li>Impact metric 3</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>My Role</h2>
+                    <p>
+                        Describe your role and responsibilities in this project.
+                    </p>
+                </div>
+
+                <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                    <a href="index.html#projects" class="btn btn-primary">View More Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Built by vibing with a friend named <img src="assets/claude-logo.png" alt="Claude" style="height: 1.2em; vertical-align: middle; margin-left: 0.25em;"></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

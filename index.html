@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal career website and portfolio">
+    <title>Career Portfolio</title>
+    <link rel="icon" type="image/jpeg" href="assets/headshot.jpg">
+    <link rel="apple-touch-icon" href="assets/headshot.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Casey Koppes</div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="#projects">Projects</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="journeys.html">Journeys 2.0</a></li>
+                        <li><a href="project2.html">Project Name 2</a></li>
+                        <li><a href="project3.html">Project Name 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#resume" style="color: var(--primary-color);">Resume</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="#">More</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://signal.twilio.com/2020/virtual/sessions/22639/scaling-your-customer-engagement-with-whatsapp" target="_blank" rel="noopener noreferrer">Twilio SIGNAL 2020 speaker</a></li>
+                        <li><a href="https://shoutoutla.com/meet-casey-koppes-product-manager-outdoor-enthusiast/" target="_blank" rel="noopener noreferrer">Shoutout LA article</a></li>
+                        <li><a href="https://airbnb.com/h/thesarasotavacationhouse" target="_blank" rel="noopener noreferrer">Airbnb Superhost!</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image-container"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, my name is Casey</h1>
+                <p class="hero-subtitle">Product Manager</p>
+                <p class="hero-description">I turn roadblocks into roadmaps.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="#resume" class="btn btn-secondary">View Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a Product Manager with +15 years of experience building
+                        products and AI solutions for ecommerce marketing platforms.
+                    </p>
+                    <p>
+                        My career started as a consultant, then moved to product
+                        management where I discovered my passion to build solutions that
+                        solve real world problems for companies.
+                        I've launched products for major brands like Disney, Bank of America,
+                        Radisson, Best Western, Caesars, Klaviyo and most recently Twilio.
+                    </p>
+                    <p>
+                        When I'm not working, you can find me exploring new technologies, enjoying nature, vibe coding on my free time, or mentally problem solving everyday things.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker" style="background-color: #F7931A;"></div>
+                    <div class="timeline-content">
+                        <h3>Staff Product Manager</h3>
+                        <h4>Twilio</h4>
+                        <p class="timeline-date">2022 - Present</p>
+                        <ul>
+                            <li>Released our Journeys workflow automation tool to allow marketers to orchestrate and activate their data with Segment's CDP.</li>
+                            <li>Launched a generative AI product to allow users to describe cohort criteria in plain text and it would build their Audience conditions for them.</li>
+                            <li>Released Broadcasts that sent campaigns to an audience via our native Email / SMS / WhatsApp channels.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Product Manager</h3>
+                        <h4>Klaviyo</h4>
+                        <p class="timeline-date">2020 - 2022</p>
+                        <ul>
+                            <li>Developed and maintained full-stack applications</li>
+                            <li>Collaborated with cross-functional teams</li>
+                            <li>Improved application performance and user experience</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Head of Product</h3>
+                        <h4>Go Moment <span style="font-weight: 400;">(acquired by Revinate)</span></h4>
+                        <p class="timeline-date">2020 - 2022</p>
+                        <ul>
+                            <li>Developed and maintained full-stack applications</li>
+                            <li>Collaborated with cross-functional teams</li>
+                            <li>Improved application performance and user experience</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>VP of Product</h3>
+                        <h4>ShootQ</h4>
+                        <p class="timeline-date">2017 - 2020</p>
+                        <ul>
+                            <li>Led product development initiatives</li>
+                            <li>Worked with engineering teams to deliver features</li>
+                            <li>Managed product roadmap and stakeholder communications</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Client Development Product Manager</h3>
+                        <h4>Runtriz</h4>
+                        <p class="timeline-date">2016 - 2017</p>
+                        <ul>
+                            <li>Responsible for customization of our hospitality guest services platform</li>
+                            <li>Managed the development and releases of iOS / Android within App stores</li>
+                            <li>Built integrations with mobile key, TV remote, online check-in/out, POS, Property Management Systems and Stripe payments</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Product Manager</h3>
+                        <h4>Company Name</h4>
+                        <p class="timeline-date">2013 - 2015</p>
+                        <ul>
+                            <li>Led product development initiatives</li>
+                            <li>Worked with engineering teams to deliver features</li>
+                            <li>Managed product roadmap and stakeholder communications</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Associate Product Manager</h3>
+                        <h4>Company Name</h4>
+                        <p class="timeline-date">2011 - 2013</p>
+                        <ul>
+                            <li>Led product development initiatives</li>
+                            <li>Worked with engineering teams to deliver features</li>
+                            <li>Managed product roadmap and stakeholder communications</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Junior Product Manager</h3>
+                        <h4>Company Name</h4>
+                        <p class="timeline-date">2010 - 2011</p>
+                        <ul>
+                            <li>Led product development initiatives</li>
+                            <li>Worked with engineering teams to deliver features</li>
+                            <li>Managed product roadmap and stakeholder communications</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Product Intern</h3>
+                        <h4>Company Name</h4>
+                        <p class="timeline-date">2009 - 2010</p>
+                        <ul>
+                            <li>Led product development initiatives</li>
+                            <li>Worked with engineering teams to deliver features</li>
+                            <li>Managed product roadmap and stakeholder communications</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Add more experience items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Artificial Intelligence</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Claude</span>
+                        <span class="skill-tag">Gemini</span>
+                        <span class="skill-tag">Grok</span>
+                        <span class="skill-tag">Open AI</span>
+                        <span class="skill-tag">ChatGPT</span>
+                        <span class="skill-tag">Figma Make</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Product Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Jira</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">ProductBoard</span>
+                        <span class="skill-tag">Gong</span>
+                        <span class="skill-tag">Notion</span>
+                        <span class="skill-tag">Google Docs</span>
+                        <span class="skill-tag">Looker</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Marketing Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Engage</span>
+                        <span class="skill-tag">Salesforce</span>
+                        <span class="skill-tag">Braze</span>
+                        <span class="skill-tag">Customer.io</span>
+                        <span class="skill-tag">Iterable</span>
+                        <span class="skill-tag">Google Ads</span>
+                        <span class="skill-tag">Hightouch</span>
+                        <span class="skill-tag">Hubspot</span>
+                        <span class="skill-tag">Facebook Ads Manager</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-image="assets/project1.jpg" data-project-url="journeys.html">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-header">
+                                <h3>Journeys 2.0</h3>
+                            </div>
+                            <div class="project-tags">
+                                <span class="project-tag">Segment</span>
+                            </div>
+                            <p class="project-description">
+                                Journeys allows users to build real-time, event-based marketing workflows to automate and personalize customer journeys. The new architecture brings real-time orchestration, richer personalization, data warehouse composability.
+                            </p>
+                            <a href="journeys.html" class="btn btn-secondary" onclick="event.stopPropagation()">Learn more</a>
+                        </div>
+                        <div class="project-card-back">
+                            <div class="project-image"></div>
+                            <button class="btn btn-secondary click-to-flip">return</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-image="assets/project2.jpg" data-project-url="project2.html">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-header">
+                                <h3>Project Name 2</h3>
+                            </div>
+                            <div class="project-tags">
+                                <span class="project-tag">TypeScript</span>
+                                <span class="project-tag">GraphQL</span>
+                                <span class="project-tag">PostgreSQL</span>
+                            </div>
+                            <p class="project-description">
+                                Another project showcasing your skills. Highlight the key features and your role in the project.
+                            </p>
+                            <a href="project2.html" class="btn btn-secondary" onclick="event.stopPropagation()">Learn more</a>
+                        </div>
+                        <div class="project-card-back">
+                            <div class="project-image"></div>
+                            <button class="btn btn-secondary click-to-flip">return</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-image="assets/project3.jpg" data-project-url="project3.html">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-header">
+                                <h3>Project Name 3</h3>
+                            </div>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Flask</span>
+                                <span class="project-tag">Docker</span>
+                            </div>
+                            <p class="project-description">
+                                Describe your third featured project. Include challenges you overcame and technologies used.
+                            </p>
+                            <a href="project3.html" class="btn btn-secondary" onclick="event.stopPropagation()">Learn more</a>
+                        </div>
+                        <div class="project-card-back">
+                            <div class="project-image"></div>
+                            <button class="btn btn-secondary click-to-flip">return</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    I'm always interested in hearing about new opportunities and collaborations.
+                    Feel free to reach out!
+                </p>
+                <div class="contact-methods">
+                    <a href="mailto:casey.koppes@gmail.com" class="contact-method">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/caseykoppes" target="_blank" rel="noopener noreferrer" class="contact-method">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/caseykoppes" target="_blank" rel="noopener noreferrer" class="contact-method">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Schedule some time</h2>
+            <div class="schedule-content">
+                <p class="schedule-intro">
+                    Let's connect and discuss your project or opportunity.
+                </p>
+                <!-- Google Calendar Appointment Scheduling begin -->
+                <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3iJjqqjSNuWAbuCUNCOi7rhR0GgLGTNFSnX9DQsWseGHEG3-of666EXJZ-HnUkKXRV8diBKszj?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+                <!-- end Google Calendar Appointment Scheduling -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+                <div class="resume-actions">
+                    <a href="assets/resume.pdf" download class="btn btn-primary">Download Resume</a>
+                    <button class="btn btn-secondary" id="copy-resume-link" data-url="https://drive.google.com/file/d/17NjwmMGM7GS_x1aG__OPSN-eBOPsF-sU/view?usp=sharing">Copy link <i class="fa-solid fa-copy"></i></button>
+                </div>
+                <div class="resume-viewer">
+                    <iframe src="assets/resume.pdf" title="Resume PDF viewer"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Built by vibing with a friend named <img src="assets/claude-logo.png" alt="Claude" style="height: 1.2em; vertical-align: middle; margin-left: 0.25em;"></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
