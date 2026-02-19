@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Concierge - Intelligent Guest Communication Platform">
+    <title>AI Concierge | Casey Koppes</title>
+    <link rel="icon" type="image/jpeg" href="assets/headshot.jpg">
+    <link rel="apple-touch-icon" href="assets/headshot.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .project-hero {
+            padding: 8rem 0 4rem;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .project-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #ffffff;
+            z-index: 0;
+        }
+
+        .project-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 1rem;
+        }
+
+        .project-hero .project-subtitle {
+            font-size: 1.5rem;
+            color: #000000;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+        }
+
+        .project-content {
+            padding: 4rem 0;
+        }
+
+        .project-section {
+            margin-bottom: 3rem;
+        }
+
+        .project-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .project-section h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .project-section p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .project-section ul {
+            list-style: disc;
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-section li {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-image-large {
+            width: 100%;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 0.75rem;
+            margin: 2rem 0;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand"><a href="index.html" style="color: inherit;">Casey Koppes</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#schedule">Schedule</a></li>
+                <li><a href="index.html#resume" style="color: var(--primary-color);">Resume</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to Projects
+            </a>
+            <h1>AI Concierge</h1>
+            <p class="project-subtitle">Intelligent guest communication platform powered by AI assistant "Ivy"</p>
+            <div class="project-tags">
+                <span class="skill-tag">Go Moment</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto;">
+
+                <div class="project-section">
+                    <h2>Overview</h2>
+                    <p>
+                        AI Concierge, powered by our AI assistant "Ivy," revolutionized hotel guest communication by providing automated, intelligent text messaging throughout the guest journey. From pre-arrival information to real-time concierge services, Ivy handled guest inquiries autonomously while maintaining a personal touch.
+                    </p>
+                    <p>
+                        The platform helped hotels reduce front desk workload, improve guest satisfaction scores, and generate additional revenue through automated upselling of accommodation offers and room service.
+                    </p>
+                </div>
+
+                <div class="project-image-large" style="background-image: url('assets/placeholder.jpg');"></div>
+
+                <div class="project-section">
+                    <h2>Key Features</h2>
+
+                    <h3>Pre-Arrival Communication</h3>
+                    <p>
+                        Ivy automatically texts guests before their reservation to provide essential information about their stay, including check-in procedures, parking details, amenities, and local recommendations. This proactive communication reduced front desk inquiries by 40%.
+                    </p>
+
+                    <h3>Seamless Check-In Experience</h3>
+                    <p>
+                        Guests could complete check-in via text message, including ID verification and payment confirmation. Mobile key integration allowed guests to bypass the front desk entirely and go straight to their room.
+                    </p>
+
+                    <h3>24/7 Concierge Services</h3>
+                    <p>
+                        Ivy answered guest questions autonomously around the clock - from WiFi passwords and pool hours to restaurant recommendations and transportation requests. When human assistance was needed, conversations seamlessly transferred to hotel staff.
+                    </p>
+
+                    <h3>Revenue Generation</h3>
+                    <p>
+                        The platform automatically offered room upgrades, late checkout, spa appointments, and room service at optimal moments during the guest journey, increasing ancillary revenue by an average of 15%.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h2>Impact</h2>
+                    <ul>
+                        <li>Automated over 50% of guest inquiries without human intervention</li>
+                        <li>Reduced front desk call volume by 40%</li>
+                        <li>Increased guest satisfaction scores by 20%</li>
+                        <li>Generated 15% increase in ancillary revenue through automated upselling</li>
+                        <li>Deployed across 500+ hotel properties worldwide</li>
+                        <li>Handled millions of guest conversations monthly</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>My Role</h2>
+                    <p>
+                        As Head of Product at Go Moment, I led the development and evolution of the AI Concierge platform. Key responsibilities included:
+                    </p>
+                    <ul>
+                        <li>Defined product vision for AI-powered guest communication</li>
+                        <li>Designed conversation flows and AI response training for hospitality use cases</li>
+                        <li>Built integrations with Property Management Systems (PMS), mobile key providers, and payment systems</li>
+                        <li>Developed omni-channel support across SMS, WhatsApp, webchat, Alexa, and Google Assistant</li>
+                        <li>Established metrics and reporting for guest engagement and ROI tracking</li>
+                        <li>Led partnerships with major hotel brands including Best Western, Radisson, and Caesars</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                    <a href="index.html#projects" class="btn btn-primary">View More Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Built by vibing with a friend named <img src="assets/claude-logo.png" alt="Claude" style="height: 1.2em; vertical-align: middle; margin-left: 0.25em;"></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
