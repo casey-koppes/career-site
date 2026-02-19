@@ -201,24 +201,21 @@ if (projectsGrid && prevBtn && nextBtn) {
     const scrollAmount = 370; // Card width + gap
 
     prevBtn.addEventListener('click', () => {
-        projectsGrid.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        // If at the beginning, loop to the end
+        if (projectsGrid.scrollLeft <= 0) {
+            projectsGrid.scrollTo({ left: projectsGrid.scrollWidth, behavior: 'smooth' });
+        } else {
+            projectsGrid.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        }
     });
 
     nextBtn.addEventListener('click', () => {
-        projectsGrid.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    });
-
-    // Update button visibility based on scroll position
-    const updateNavButtons = () => {
-        prevBtn.style.opacity = projectsGrid.scrollLeft <= 0 ? '0.3' : '1';
-        prevBtn.style.pointerEvents = projectsGrid.scrollLeft <= 0 ? 'none' : 'auto';
-
         const maxScroll = projectsGrid.scrollWidth - projectsGrid.clientWidth;
-        nextBtn.style.opacity = projectsGrid.scrollLeft >= maxScroll - 10 ? '0.3' : '1';
-        nextBtn.style.pointerEvents = projectsGrid.scrollLeft >= maxScroll - 10 ? 'none' : 'auto';
-    };
-
-    projectsGrid.addEventListener('scroll', updateNavButtons);
-    window.addEventListener('resize', updateNavButtons);
-    updateNavButtons();
+        // If at the end, loop back to the beginning
+        if (projectsGrid.scrollLeft >= maxScroll - 10) {
+            projectsGrid.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+            projectsGrid.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+    });
 }
