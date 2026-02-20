@@ -198,24 +198,36 @@ const prevBtn = document.querySelector('.carousel-nav.prev');
 const nextBtn = document.querySelector('.carousel-nav.next');
 
 if (projectsGrid && prevBtn && nextBtn) {
-    const scrollAmount = 370; // Card width + gap
+    const cards = projectsGrid.querySelectorAll('.project-card');
+    let currentIndex = 0;
+
+    const getCardWidth = () => {
+        if (cards.length === 0) return 0;
+        const card = cards[0];
+        const style = getComputedStyle(projectsGrid);
+        const gap = parseFloat(style.gap) || 32; // Default 2rem = 32px
+        return card.offsetWidth + gap;
+    };
+
+    const scrollToCard = (index) => {
+        const cardWidth = getCardWidth();
+        const scrollPosition = index * cardWidth;
+        projectsGrid.scrollTo({ left: scrollPosition, behavior: 'smooth' });
+    };
 
     prevBtn.addEventListener('click', () => {
-        // If at the beginning, loop to the end
-        if (projectsGrid.scrollLeft <= 0) {
-            projectsGrid.scrollTo({ left: projectsGrid.scrollWidth, behavior: 'smooth' });
-        } else {
-            projectsGrid.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        currentIndex--;
+        if (currentIndex < 0) {
+            currentIndex = cards.length - 1; // Loop to last card
         }
+        scrollToCard(currentIndex);
     });
 
     nextBtn.addEventListener('click', () => {
-        const maxScroll = projectsGrid.scrollWidth - projectsGrid.clientWidth;
-        // If at the end, loop back to the beginning
-        if (projectsGrid.scrollLeft >= maxScroll - 10) {
-            projectsGrid.scrollTo({ left: 0, behavior: 'smooth' });
-        } else {
-            projectsGrid.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        currentIndex++;
+        if (currentIndex >= cards.length) {
+            currentIndex = 0; // Loop to first card
         }
+        scrollToCard(currentIndex);
     });
 }
