@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All Projects - Casey Koppes Portfolio">
+    <title>All Projects | Casey Koppes</title>
+    <link rel="icon" type="image/jpeg" href="assets/headshot.jpg">
+    <link rel="apple-touch-icon" href="assets/headshot.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .projects-hero {
+            padding: 8rem 0 4rem;
+            background: #ffffff;
+        }
+
+        .projects-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 1rem;
+        }
+
+        .projects-hero .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+        }
+
+        .projects-content {
+            padding: 4rem 0;
+        }
+
+        .projects-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-item {
+            background: var(--bg-primary);
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .project-item-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-item-content {
+            padding: 1.5rem;
+        }
+
+        .project-item-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .project-item-content p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .project-item-tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: var(--bg-secondary);
+            border-radius: 1rem;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .project-item-tag img {
+            height: 1em;
+            vertical-align: middle;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .projects-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand"><a href="index.html" style="color: inherit;">Casey Koppes</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#schedule">Schedule</a></li>
+                <li><a href="index.html#resume" style="color: var(--primary-color);">Resume</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="#">More</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://signal.twilio.com/2020/virtual/sessions/22639/scaling-your-customer-engagement-with-whatsapp" target="_blank" rel="noopener noreferrer">Twilio SIGNAL 2020 speaker</a></li>
+                        <li><a href="https://shoutoutla.com/meet-casey-koppes-product-manager-outdoor-enthusiast/" target="_blank" rel="noopener noreferrer">Shoutout LA article</a></li>
+                        <li><a href="https://airbnb.com/h/thesarasotavacationhouse" target="_blank" rel="noopener noreferrer">Airbnb Superhost!</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="projects-hero">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to Home
+            </a>
+            <h1>All Projects</h1>
+            <p class="subtitle">A collection of products I've built and contributed to throughout my career.</p>
+        </div>
+    </section>
+
+    <!-- Projects List -->
+    <section class="projects-content">
+        <div class="container">
+            <div class="projects-list">
+
+                <a href="journeys.html" class="project-item">
+                    <img src="assets/project1.jpg" alt="Journeys 2.0" class="project-item-image">
+                    <div class="project-item-content">
+                        <span class="project-item-tag"><img src="assets/Segment_logo.png" alt="Segment"></span>
+                        <h3>Journeys 2.0</h3>
+                        <p>Real-time, event-based marketing workflows to automate and personalize customer journeys.</p>
+                    </div>
+                </a>
+
+                <a href="generativeAudiences.html" class="project-item">
+                    <img src="assets/generative_Audience.png" alt="Generative Audiences" class="project-item-image">
+                    <div class="project-item-content">
+                        <span class="project-item-tag"><img src="assets/Segment_logo.png" alt="Segment"></span>
+                        <h3>Generative Audiences</h3>
+                        <p>Describe cohort criteria in plain text and let AI build the audience conditions for you.</p>
+                    </div>
+                </a>
+
+                <a href="broadcasts.html" class="project-item">
+                    <img src="assets/broadcasts.png" alt="Broadcasts" class="project-item-image">
+                    <div class="project-item-content">
+                        <span class="project-item-tag"><img src="assets/Segment_logo.png" alt="Segment"></span>
+                        <h3>Broadcasts</h3>
+                        <p>Send batch and blast campaigns via native Email, SMS & WhatsApp channels.</p>
+                    </div>
+                </a>
+
+                <a href="aiConcierge.html" class="project-item">
+                    <img src="assets/Go-Moment-Ivy-Card.png" alt="AI Concierge" class="project-item-image">
+                    <div class="project-item-content">
+                        <span class="project-item-tag"><img src="assets/ivy.webp" alt="Go Moment"></span>
+                        <h3>AI Concierge</h3>
+                        <p>AI assistant "Ivy" that texts guests to provide information, check-in, and concierge services.</p>
+                    </div>
+                </a>
+
+                <a href="homepageRedesign.html" class="project-item">
+                    <img src="assets/Klaviyo-Homepage-card.png" alt="Homepage Redesign" class="project-item-image">
+                    <div class="project-item-content">
+                        <span class="project-item-tag"><img src="assets/Klaviyo-logo.png" alt="Klaviyo"></span>
+                        <h3>Homepage Redesign</h3>
+                        <p>Complete overhaul of the Klaviyo marketing dashboard to focus on campaign performance.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Built by vibing with a friend named <img src="assets/claude-logo.png" alt="Claude" style="height: 1.2em; vertical-align: middle; margin-left: 0.25em;"></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
