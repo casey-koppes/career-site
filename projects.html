@@ -104,6 +104,20 @@
             transform: translateX(-5px);
         }
 
+        .company-section {
+            margin-bottom: 4rem;
+        }
+
+        .company-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .company-logo {
+            height: 2rem;
+        }
+
         @media (max-width: 768px) {
             .projects-list {
                 grid-template-columns: 1fr;
@@ -158,54 +172,87 @@
     <!-- Projects List -->
     <section class="projects-content">
         <div class="container">
-            <div class="projects-list">
 
-                <a href="journeys.html" class="project-item">
-                    <img src="assets/project1.jpg" alt="Journeys 2.0" class="project-item-image">
-                    <div class="project-item-content">
-                        <span class="project-item-tag"><img src="assets/Segment_logo.png" alt="Segment"></span>
-                        <h3>Journeys 2.0</h3>
-                        <p>Real-time, event-based marketing workflows to automate and personalize customer journeys.</p>
-                    </div>
-                </a>
+            <!-- Segment Projects -->
+            <div class="company-section">
+                <div class="company-header">
+                    <img src="assets/Segment_logo.png" alt="Segment" class="company-logo">
+                </div>
+                <div class="projects-list">
+                    <a href="journeys.html" class="project-item">
+                        <img src="assets/project1.jpg" alt="Journeys 2.0" class="project-item-image">
+                        <div class="project-item-content">
+                            <h3>Journeys 2.0</h3>
+                            <p>Real-time, event-based marketing workflows to automate and personalize customer journeys.</p>
+                        </div>
+                    </a>
 
-                <a href="generativeAudiences.html" class="project-item">
-                    <img src="assets/generative_Audience.png" alt="Generative Audiences" class="project-item-image">
-                    <div class="project-item-content">
-                        <span class="project-item-tag"><img src="assets/Segment_logo.png" alt="Segment"></span>
-                        <h3>Generative Audiences</h3>
-                        <p>Describe cohort criteria in plain text and let AI build the audience conditions for you.</p>
-                    </div>
-                </a>
+                    <a href="generativeAudiences.html" class="project-item">
+                        <img src="assets/generative_Audience.png" alt="Generative Audiences" class="project-item-image">
+                        <div class="project-item-content">
+                            <h3>Generative Audiences</h3>
+                            <p>Describe cohort criteria in plain text and let AI build the audience conditions for you.</p>
+                        </div>
+                    </a>
 
-                <a href="broadcasts.html" class="project-item">
-                    <img src="assets/broadcasts.png" alt="Broadcasts" class="project-item-image">
-                    <div class="project-item-content">
-                        <span class="project-item-tag"><img src="assets/Segment_logo.png" alt="Segment"></span>
-                        <h3>Broadcasts</h3>
-                        <p>Send batch and blast campaigns via native Email, SMS & WhatsApp channels.</p>
-                    </div>
-                </a>
-
-                <a href="aiConcierge.html" class="project-item">
-                    <img src="assets/Go-Moment-Ivy-Card.png" alt="AI Concierge" class="project-item-image">
-                    <div class="project-item-content">
-                        <span class="project-item-tag"><img src="assets/ivy.webp" alt="Go Moment"></span>
-                        <h3>AI Concierge</h3>
-                        <p>AI assistant "Ivy" that texts guests to provide information, check-in, and concierge services.</p>
-                    </div>
-                </a>
-
-                <a href="homepageRedesign.html" class="project-item">
-                    <img src="assets/Klaviyo-Homepage-card.png" alt="Homepage Redesign" class="project-item-image">
-                    <div class="project-item-content">
-                        <span class="project-item-tag"><img src="assets/Klaviyo-logo.png" alt="Klaviyo"></span>
-                        <h3>Homepage Redesign</h3>
-                        <p>Complete overhaul of the Klaviyo marketing dashboard to focus on campaign performance.</p>
-                    </div>
-                </a>
-
+                    <a href="broadcasts.html" class="project-item">
+                        <img src="assets/broadcasts.png" alt="Broadcasts" class="project-item-image">
+                        <div class="project-item-content">
+                            <h3>Broadcasts</h3>
+                            <p>Send batch and blast campaigns via native Email, SMS & WhatsApp channels.</p>
+                        </div>
+                    </a>
+                </div>
             </div>
+
+            <!-- Go Moment Projects -->
+            <div class="company-section">
+                <div class="company-header">
+                    <img src="assets/ivy.webp" alt="Go Moment" class="company-logo">
+                </div>
+                <div class="projects-list">
+                    <a href="aiConcierge.html" class="project-item">
+                        <img src="assets/Go-Moment-Ivy-Card.png" alt="AI Concierge" class="project-item-image">
+                        <div class="project-item-content">
+                            <h3>AI Concierge</h3>
+                            <p>AI assistant "Ivy" that texts guests to provide information, check-in, and concierge services.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Klaviyo Projects -->
+            <div class="company-section">
+                <div class="company-header">
+                    <img src="assets/Klaviyo-logo.png" alt="Klaviyo" class="company-logo">
+                </div>
+                <div class="projects-list">
+                    <a href="homepageRedesign.html" class="project-item">
+                        <img src="assets/Klaviyo-Homepage-card.png" alt="Homepage Redesign" class="project-item-image">
+                        <div class="project-item-content">
+                            <h3>Homepage Redesign</h3>
+                            <p>Complete overhaul of the Klaviyo marketing dashboard to focus on campaign performance.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Runtriz Projects -->
+            <div class="company-section">
+                <div class="company-header">
+                    <img src="assets/Runtriz_logo.jpg" alt="Runtriz" class="company-logo">
+                </div>
+                <div class="projects-list">
+                    <a href="radissonRedApp.html" class="project-item">
+                        <img src="assets/placeholder.jpg" alt="Radisson Red App" class="project-item-image">
+                        <div class="project-item-content">
+                            <h3>Radisson Red App</h3>
+                            <p>Native guest services mobile application for iOS and Android with mobile key integration.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
         </div>
     </section>
 
