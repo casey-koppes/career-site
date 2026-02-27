@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </svg>
                     <h3 style="color: var(--text-secondary); margin-bottom: 0.5rem;">Resume Not Found</h3>
                     <p style="color: var(--text-secondary); text-align: center;">
-                        Please add your resume PDF as <code>assets/resume.pdf</code>
+                        Please add your resume PDF as <code>assets/Casey Koppes Resume.pdf</code>
                     </p>
                 </div>
             `;
