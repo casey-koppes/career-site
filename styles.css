@@ -911,21 +911,23 @@ button.click-to-flip {
         padding: 3rem 0;
     }
 
-    /* Make mobile viewer taller on small screens */
+    /* Make mobile viewer taller on small screens for 2-page resume */
     .resume-mobile {
-        height: 800px;
+        height: 1200px;
     }
 
-    /* Expand calendar wrapper on mobile - no overflow to avoid scroll trap */
+    /* Expand calendar wrapper on mobile - use clip-path to hide Google header without overlap */
     .calendar-wrapper {
-        height: 1000px;
+        height: auto;
         overflow: visible;
     }
 
     .calendar-wrapper iframe {
         position: relative;
-        top: -200px;
-        height: 1200px;
-        margin-bottom: -200px;
+        top: 0;
+        height: 1000px;
+        clip-path: inset(200px 0 0 0);
+        margin-top: -200px;
+        margin-bottom: 0;
     }
 }
