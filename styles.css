@@ -875,11 +875,19 @@ button.click-to-flip {
     }
 
     .resume-viewer {
-        height: 600px;
+        height: 1200px;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 }
 
 @media (max-width: 480px) {
+    .resume-viewer {
+        height: 1400px;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
     .container {
         padding: 0 1rem;
     }
