@@ -915,4 +915,13 @@ button.click-to-flip {
     .resume-mobile {
         height: 800px;
     }
+
+    /* Expand calendar wrapper on mobile to show time slots */
+    .calendar-wrapper {
+        height: 900px;
+    }
+
+    .calendar-wrapper iframe {
+        height: 1100px;
+    }
 }
