@@ -916,12 +916,16 @@ button.click-to-flip {
         height: 800px;
     }
 
-    /* Expand calendar wrapper on mobile to show time slots */
+    /* Expand calendar wrapper on mobile - no overflow to avoid scroll trap */
     .calendar-wrapper {
-        height: 900px;
+        height: 1000px;
+        overflow: visible;
     }
 
     .calendar-wrapper iframe {
-        height: 1100px;
+        position: relative;
+        top: -200px;
+        height: 1200px;
+        margin-bottom: -200px;
     }
 }
